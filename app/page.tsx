@@ -1,5 +1,5 @@
-import HeroSection from './hero/HeroSection';
-import CoreValues from './values/CoreValues';
+import HeroSection from './components/hero/HeroSection';
+import CoreValues from './components/values/CoreValues';
 
 export default function Home() {
   return (

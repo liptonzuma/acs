@@ -14,7 +14,7 @@ export default function HeroSection() {
   return (
     <div
       className={`
-    min-h-[95dvh] bg-neutral-950  w-[100dvw] text-white p-[48px] flex flex-col items-center justify-center
+    min-h-[100dvh] bg-neutral-950  w-[100%] text-white p-[48px] flex flex-col items-center justify-center
   `}
     >
       <DivWrapper>
@@ -36,14 +36,17 @@ export default function HeroSection() {
               support in achieving your software development goals.
             </p>
 
-            <div className="flex items-center gap-[15px]">
+            <div className="flex items-center flex-wrap  gap-[15px]">
               <Button
                 label="Get in touch"
                 onClick={() => {}}
-                className="font-bold capitalize h-[50px] px-[3rem] text-lg bg-white rounded-[6px] text-neutral-950"
+                className="font-bold max-sm:w-full capitalize h-[50px] px-[3rem] text-lg bg-white rounded-[6px] text-neutral-950"
               />
 
-              <Link href="" className="font-semibold underline text-lg">
+              <Link
+                href=""
+                className="font-semibold capitalize underline max-sm:text-center text-lg"
+              >
                 See some of our clients.
               </Link>
             </div>
