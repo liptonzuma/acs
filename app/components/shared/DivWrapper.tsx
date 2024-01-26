@@ -7,5 +7,9 @@ export default function DivWrapper({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <div className={'max-w-[1500px] w-full ' + className}>{children}</div>;
+  return (
+    <div className={'max-w-[1500px] w-full max-md:px-[30px] ' + className}>
+      {children}
+    </div>
+  );
 }

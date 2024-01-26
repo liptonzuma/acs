@@ -14,7 +14,7 @@ export default function HeroSection() {
   return (
     <div
       className={`
-    min-h-[100dvh] bg-neutral-950  w-[100%] text-white p-[48px] flex flex-col items-center justify-center
+    min-h-[100dvh] bg-neutral-950  max-md:w-[100%] w-[100dvw] text-white p-[40px] max-sm:px-[50px] flex  flex-col items-center justify-center
   `}
     >
       <DivWrapper>

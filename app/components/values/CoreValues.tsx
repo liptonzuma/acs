@@ -4,6 +4,7 @@ import DivWrapper from '../shared/DivWrapper';
 import RedText from '../shared/RedText';
 import { GoSponsorTiers, GoGoal, GoTelescope } from 'react-icons/go';
 import Card from '../shared/Card';
+import BarCard from '../shared/BarCard';
 
 const traits = [
   {
@@ -22,7 +23,7 @@ const traits = [
     title: 'the values.',
     icon: <GoSponsorTiers />,
     description:
-      'We are keen on making these characteristics as obvious at first glance as possible; ingeniuty,collaborative,accountable,resilient and empathetic.',
+      'We strive to ensure that these qualities—ingenuity, collaboration, accountability, resilience, and empathy—are immediately apparent at first glance.',
   },
 ];
 
@@ -30,7 +31,7 @@ export default function CoreValues() {
   return (
     <section
       id="values"
-      className="flex  flex-col bg-gray-200  items-center p-[50px] py-[8rem]"
+      className="flex  flex-col bg-[var(--primary-gray)]  items-center p-[50px] py-[8rem]"
     >
       <DivWrapper className="">
         <div className="flex md:flex-row flex-col max-sm:items-center items-end gap-[30px]">
@@ -44,16 +45,13 @@ export default function CoreValues() {
               yet we want you to have it.
             </p>
           </div>
-          <div className="md:w-1/2 bg-white p-[8px] rounded-[4px]">
-            <div className="flex items-stretch gap-[10px]">
-              <div className="w-[8px] bg-[var(--primary-red)]"></div>
-              <p className="text-[18px] opacity-85">
-                As a reliable supplier of technical and project management
-                talent on an outsourcing basis, these are the core values that
-                we instill in our team.
-              </p>
-            </div>
-          </div>
+
+          <BarCard
+            parentClassName="md:w-1/2"
+            text={
+              ' As a reliable supplier of technical and project management talent on an outsourcing basis, these are the core values that we instill in our team.'
+            }
+          />
         </div>
         <div className="mt-[3rem] flex  gap-[24px]  flex-wrap">
           {traits.map((trait, i) => (

@@ -11,6 +11,10 @@
 
 :root {
   --primary-red: #e2093c;
+  --primary-gray: #f1eeee;
+}
+html {
+  overflow-x: hidden !important;
 }
 
 body {
