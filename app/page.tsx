@@ -1,7 +1,9 @@
 import { Metadata } from 'next';
-import HeroSection from './components/hero/HeroSection';
-import ProductAndServices from './components/services/ProductAndServices';
-import CoreValues from './components/values/CoreValues';
+import HeroSection from './components/home/hero/HeroSection';
+import ProductAndServices from './components/home/services/ProductAndServices';
+import CoreValues from './components/home/values/CoreValues';
+import Testimonies from './components/home/testimonies/Testimonies';
+import Contact from './components/home/contact/Contact';
 
 export const metadata: Metadata = {
   title: 'Adaptive Computer Solutions',
@@ -16,6 +18,8 @@ export default function Home() {
       </section>
       <CoreValues />
       <ProductAndServices />
+      <Testimonies />
+      <Contact />
     </main>
   );
 }

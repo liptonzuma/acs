@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import DivWrapper from '../shared/DivWrapper';
-import RedText from '../shared/RedText';
-import BarCard from '../shared/BarCard';
-import Button from '../shared/Button';
-import Modal from '../shared/Modal';
+import DivWrapper from '../../shared/DivWrapper';
+import RedText from '../../shared/RedText';
+import BarCard from '../../shared/BarCard';
+import Button from '../../shared/Button';
+import Modal from '../../shared/Modal';
 import { RiCodeSSlashFill, RiUserVoiceLine } from 'react-icons/ri';
 import { BsPeople } from 'react-icons/bs';
 import { MdOutlineSettingsInputAntenna } from 'react-icons/md';

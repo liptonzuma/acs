@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
 import React from 'react';
-import Button from '../shared/Button';
+import Button from '../../shared/Button';
 import Link from 'next/link';
 import Image from 'next/image';
 import pattern from './images/patterns.png';
-import DivWrapper from '../shared/DivWrapper';
+import DivWrapper from '../../shared/DivWrapper';
+import Clients from './Clients';
 
 export const title = 'Adaptive computer solutions';
 const whiteSpaceRegex = /^\s+$/;
@@ -25,7 +26,7 @@ export default function HeroSection() {
           No solution is{' '}
           <span className="text-[var(--primary-red)]">too complex</span> when
           you have the <span className="text-[var(--primary-red)]">right</span>{' '}
-          personel.
+          tools and personel.
         </h1>
         <div className="flex md:flex-row flex-col">
           <div className="md:w-1/2">
@@ -47,7 +48,7 @@ export default function HeroSection() {
                 href=""
                 className="font-semibold capitalize underline max-sm:text-center text-lg"
               >
-                See some of our clients.
+                discover more on how we work.
               </Link>
             </div>
             <div className="mt-[24px] text-gray-300 text-[16px]">
@@ -66,6 +67,8 @@ export default function HeroSection() {
             <Image draggable={false} src={pattern} alt="pattern" />
           </div>
         </div>
+
+        <Clients />
       </DivWrapper>
 
       {/* <div className="md:text-center flex md:items-center flex-col p-[20px] relative">

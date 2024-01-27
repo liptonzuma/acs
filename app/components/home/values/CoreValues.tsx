@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import DivWrapper from '../shared/DivWrapper';
-import RedText from '../shared/RedText';
+import DivWrapper from '../../shared/DivWrapper';
+import RedText from '../../shared/RedText';
 import { GoSponsorTiers, GoGoal, GoTelescope } from 'react-icons/go';
-import Card from '../shared/Card';
-import BarCard from '../shared/BarCard';
+import Card from '../../shared/Card';
+import BarCard from '../../shared/BarCard';
 
 const traits = [
   {
@@ -53,7 +53,7 @@ export default function CoreValues() {
             }
           />
         </div>
-        <div className="mt-[3rem] flex  gap-[24px]  flex-wrap">
+        <div className="mt-[3rem] flex  gap-[24px]  max-md:flex-wrap">
           {traits.map((trait, i) => (
             <Card key={trait.title}>
               <div className="flex mb-[12px] gap-[10px]">
