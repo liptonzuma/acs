@@ -102,7 +102,7 @@ export default function Navbar() {
         </div>
       </DivWrapper>
 
-      <DivWrapper className="md:hidden drawer drawer-end">
+      <DivWrapper className="md:hidden drawer drawer-end overflow-hidden">
         <div className="drawer drawer-end">
           <input
             id="my-drawer-4"
