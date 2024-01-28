@@ -94,7 +94,7 @@ export default function Footer() {
             <div className="w-[200px] h-[150px]">
               <Image src={logo} alt="logo" width={200} height={200} />
             </div>
-            <p className="text-lg pl-[20px] opacity-65 text-white">
+            <p className="text-base pl-[20px] opacity-65 text-white">
               Your most reliable supplier of technical and project management
               talents. We code dreams and we say it's possible.
             </p>
@@ -138,7 +138,7 @@ export default function Footer() {
               <h3 className="font-semibold text-[var(--primary-red)] capitalize text-xl">
                 {l.title}
               </h3>
-              <div className=" space-y-[10px] mt-[12px] font-medium text-lg">
+              <div className=" space-y-[10px] mt-[12px] font-medium text-base">
                 {l.links.map((link, i) => (
                   <Link
                     href={link.pathName}
@@ -153,7 +153,7 @@ export default function Footer() {
           ))}
         </div>
         <hr className=" opacity-50 mt-[40px] " />
-        <div className="flex flex-wrap gap-[20px] text-white justify-center mt-[24px] opacity-65 text-lg">
+        <div className="flex flex-wrap gap-[20px] text-white justify-center mt-[24px] opacity-65 text-base">
           <p>&copy;{year.toString()} Adaptive Computer Solutions</p>
           <div className="flex gap-[4px] items-center">
             <GrLocation size={16} className="text-[var(--primary-red)]" />

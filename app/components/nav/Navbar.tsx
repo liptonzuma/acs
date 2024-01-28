@@ -64,7 +64,7 @@ export default function Navbar() {
             <Link
               href={link.pathName}
               key={link.path + index}
-              className="capitalize font-medium text-lg block hover:text-white  text-gray-400"
+              className="capitalize font-medium text-base block hover:text-white  text-gray-400"
             >
               {link.path}
             </Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
               <Link
                 href={link.pathName + index}
                 key={link.path}
-                className="capitalize font-medium text-lg block text-gray-400"
+                className="capitalize font-medium text-base block text-gray-400"
               >
                 {link.path}
               </Link>
@@ -144,7 +144,7 @@ export default function Navbar() {
                   <Link
                     href={link.pathName}
                     key={link.path}
-                    className="capitalize font-medium text-lg block  "
+                    className="capitalize font-medium text-base block  "
                     onClick={closeMenu}
                   >
                     {link.path}

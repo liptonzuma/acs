@@ -18,7 +18,7 @@ export default function HeroSection() {
     min-h-[100dvh]  bg-neutral-950  max-md:w-[100%] w-[100dvw] text-white p-[40px] max-sm:px-[50px] flex  flex-col items-center justify-center
   `}
     >
-      <DivWrapper className="mt-[30px]">
+      <DivWrapper className="lg:mt-[40px]">
         <div className="md:w-1/2 md:hidden max-h-[200px] overflow-y-hidden mb-[30px]">
           <Image draggable={false} src={pattern} alt="pattern" />
         </div>
@@ -38,14 +38,14 @@ export default function HeroSection() {
             <div className="flex items-center flex-wrap  gap-[15px]">
               <Link
                 href="#contact-us"
-                className="font-bold max-sm:w-full flex items-center justify-center capitalize h-[50px] px-[3rem] text-lg bg-white rounded-[6px] text-neutral-950"
+                className="font-bold max-sm:w-full flex items-center justify-center capitalize h-[50px] px-[3rem] text-base bg-white rounded-[6px] text-neutral-950"
               >
                 Get in touch
               </Link>
 
               <Link
                 href=""
-                className="font-semibold capitalize underline max-sm:text-center text-lg"
+                className="font-semibold capitalize underline max-sm:text-center text-base"
               >
                 discover more on how we work.
               </Link>
@@ -114,7 +114,7 @@ export default function HeroSection() {
           transition={{
             delay: 2.8,
           }}
-          className="md:text-xl text-lg font-normal relative z-[9999]  md:w-[75%] mt-[1.5rem] lg:w-[60%] text-gray-400  leading-relaxed"
+          className="md:text-xl text-base font-normal relative z-[9999]  md:w-[75%] mt-[1.5rem] lg:w-[60%] text-gray-400  leading-relaxed"
         >
           Unlock the potential of your projects with our elite team of software
           engineering, agile scrum masters, and quality assurance experts.

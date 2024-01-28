@@ -45,7 +45,7 @@ export default function Testimonies() {
         <h1 className="font-semibold text-3xl capitalize mt-[6px]">
           Our <RedText>Credibility</RedText> Manifesting in our works.
         </h1>
-        <p className="lg:w-[60%] font-normal text-lg opacity-75 mt-[10px]">
+        <p className="lg:w-[60%] font-normal text-base opacity-75 mt-[10px]">
           This is just a few of the never ending remarks from some of our most
           recent clients.When your work stands out, no client would like to keep
           the excitement and satisfaction to themselves.
@@ -63,7 +63,7 @@ export default function Testimonies() {
               <h1 className="font-semibold capitalize text-xl opacity-80">
                 {testimony.title}
               </h1>
-              <p className="mt-[12px] text-lg opacity-70">
+              <p className="mt-[12px] text-base opacity-70">
                 {testimony.description}
               </p>
               <div className="mt-[20px] flex gap-[12px]">

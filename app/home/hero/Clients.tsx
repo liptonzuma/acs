@@ -58,7 +58,7 @@ export default function Clients() {
 
   return (
     <div className="mt-[42px] ">
-      <p className="font-semibold text-lg opacity-65 md:pl-[24px]">
+      <p className="font-semibold text-base opacity-65 md:pl-[24px]">
         Trusted by
       </p>
       <Slider

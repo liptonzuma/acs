@@ -38,7 +38,7 @@ export default function Contact() {
               Get in touch.
             </h3>
             <h2 className="font-semibold text-3xl">Need to talk to us?</h2>
-            <p className="text-lg opacity-75 mt-[12px]">
+            <p className="text-base opacity-75 mt-[12px]">
               We're always ready to hear you out. Whenever you feel like talking
               to us, just send us a mail or pass through our office for an
               in-person discussion.
@@ -96,7 +96,7 @@ export default function Contact() {
             <h3 className="text-neutral capitalize  font-semibold text-3xl opacity-90">
               Contact us.
             </h3>
-            <p className="text-lg text-neutral opacity-60 mb-[24px] mt-[10px]">
+            <p className="text-base text-neutral opacity-60 mb-[24px] mt-[10px]">
               Want to inform us briefly, fill this form and submit for a quick
               feedback.
             </p>
@@ -149,7 +149,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="bg-[var(--primary-red)] uppercase text-white flex gap-[8px] text-lg justify-center items-center font-semibold text-center w-full h-[45px] rounded-[6px]"
+                className="bg-[var(--primary-red)] uppercase text-white flex gap-[8px] text-base justify-center items-center font-semibold text-center w-full h-[45px] rounded-[6px]"
               >
                 Send
                 <IoSendOutline size={20} />

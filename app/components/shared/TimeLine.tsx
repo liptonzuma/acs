@@ -53,8 +53,8 @@ export default function TimeLine() {
             </svg>
           </div>
           <div className="timeline-end mb-10">
-            <time className="font-mono font-black text-lg">{tl.title}</time>
-            <div className="text-lg font-black"></div>
+            <time className="font-mono font-black text-base">{tl.title}</time>
+            <div className="text-base font-black"></div>
             <p className="text-[1rem] text-gray-400">{tl.description}</p>
           </div>
           {index + 1 !== timeline.length && <hr />}

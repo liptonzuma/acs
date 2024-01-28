@@ -41,11 +41,11 @@ export default function ProuctAndServices() {
               {content.title}.
             </h1>
             <div>
-              <p className=" text-lg opacity-70 font-normal">
+              <p className=" text-base opacity-70 font-normal">
                 {content.description}
               </p>
               {content.subDescription && (
-                <p className="mt-[18px] text-lg opacity-65 font-normal">
+                <p className="mt-[18px] text-base opacity-65 font-normal">
                   {content.subDescription}
                 </p>
               )}
@@ -54,7 +54,7 @@ export default function ProuctAndServices() {
                   {content.list.map((item, index) => (
                     <li
                       key={index.toString()}
-                      className="mb-[12px] text-lg opacity-65"
+                      className="mb-[12px] text-base opacity-65"
                     >
                       <RedText className="font-medium text-black">
                         {index + 1}.
@@ -83,7 +83,7 @@ export default function ProuctAndServices() {
                   Software Development Outsourcing.
                 </h3>
               </div>
-              <p className="mt-[14px] text-lg opacity-70">
+              <p className="mt-[14px] text-base opacity-70">
                 We closely partner with customer teams to enable the effective
                 delivery of their strategic initiatives that depend on
                 technology to be successful.
@@ -104,7 +104,7 @@ export default function ProuctAndServices() {
                   </h3>
                 </div>
 
-                <p className="mt-[14px] text-lg opacity-70">
+                <p className="mt-[14px] text-base opacity-70">
                   Our Adaptive HRIS is a top-tier human capital management
                   system with integrated benefits, serving diverse industries
                   for efficient people resource management.
@@ -123,7 +123,7 @@ export default function ProuctAndServices() {
                     Voice Applications.
                   </h3>
                 </div>
-                <p className="mt-[14px] text-lg opacity-70">
+                <p className="mt-[14px] text-base opacity-70">
                   Conversational interfaces offer cost-effective business app
                   delivery. Our Adaptive Voice enables rapid deployment with
                   full functionality.
@@ -151,7 +151,7 @@ export default function ProuctAndServices() {
                 </h3>
               </div>
 
-              <p className="mt-[14px] text-lg opacity-70">
+              <p className="mt-[14px] text-base opacity-70">
                 ACS Provisioning is a comprehensive suite for bundles, products,
                 and services activation and management, with modular design for
                 scalability, compatibility with standard servers running Linux,
