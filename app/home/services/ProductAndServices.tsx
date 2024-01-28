@@ -79,7 +79,7 @@ export default function ProuctAndServices() {
                   className="font-bold  text-[var(--primary-red)]"
                 />
 
-                <h3 className="font-semibold text-[1.3rem] opacity-75">
+                <h3 className="font-semibold text-[1.1rem] opacity-75">
                   Software Development Outsourcing.
                 </h3>
               </div>
@@ -99,7 +99,7 @@ export default function ProuctAndServices() {
                     size={30}
                   />
 
-                  <h3 className="font-semibold text-[1.3rem] opacity-75">
+                  <h3 className="font-semibold text-[1.1rem] opacity-75">
                     People Management Solutions.
                   </h3>
                 </div>
@@ -146,7 +146,7 @@ export default function ProuctAndServices() {
                   className="font-bold  text-[var(--primary-red)]"
                 />
 
-                <h3 className="font-semibold text-[1.3rem] opacity-75">
+                <h3 className="font-semibold text-[1.1rem] opacity-75">
                   Telecom Platform.
                 </h3>
               </div>
