@@ -1,20 +1,38 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+'use client';
+import React, { ElementRef, useRef } from 'react';
 import DivWrapper from '../../shared/DivWrapper';
 import { GrLocation } from 'react-icons/gr';
 import { LuMail } from 'react-icons/lu';
 import { IoCallOutline, IoSendOutline } from 'react-icons/io5';
 import { BsCalendar2Day } from 'react-icons/bs';
-import { VscSend } from 'react-icons/vsc';
 
 export default function Contact() {
+  const formRef = useRef<ElementRef<'form'>>(null);
+  const nameRef = useRef<ElementRef<'input'>>(null);
+  const subjectRef = useRef<ElementRef<'input'>>(null);
+  const emailRef = useRef<ElementRef<'input'>>(null);
+  const messageRef = useRef<ElementRef<'textarea'>>(null);
+
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const name = nameRef.current?.value;
+    const subject = subjectRef.current?.value;
+    const email = emailRef.current?.value;
+    const message = messageRef.current?.value;
+
+    const data = { name, email, subject, message };
+    console.log(data);
+
+    return data;
+  }
   return (
     <section
-      id="services"
+      id="contact-us"
       className="flex  flex-col bg-[var(--primary-gray)]  items-center p-[50px] pb-[4rem]"
     >
-      <DivWrapper className="bg-neutral-800 text-white p-[4rem] rounded-[6px] ">
-        <div className="flex gap-[30px]">
+      <DivWrapper className="bg-neutral-900 text-white p-[4rem] rounded-[6px] ">
+        <div className="flex max-md:flex-col gap-[30px]">
           <div className="md:w-1/2">
             <h3 className="font-semibold  text-2xl opacity-45 capitalize">
               Get in touch.
@@ -28,9 +46,7 @@ export default function Contact() {
             <div className="details mt-[24px] space-y-[12px]">
               <div className="flex gap-[8px]">
                 <GrLocation size={25} className="text-[var(--primary-red)]" />
-                {/* <p className="font-medium text-xl opacity-75 text-[var(--primary-red)]">
-                  Hse # 4, Jasmine St. Adjacent WW HOMES, Haasto.
-                </p> */}
+
                 <a
                   className="font-medium text-xl opacity-75 text-[var(--primary-red)]"
                   target="_blank"
@@ -77,24 +93,36 @@ export default function Contact() {
             </div>
           </div>
           <div className="md:w-1/2 bg-white p-[18px] rounded-[8px] shadow-md">
-            <h3 className="text-neutral capitalize mb-[14px] font-semibold text-3xl opacity-75">
+            <h3 className="text-neutral capitalize  font-semibold text-3xl opacity-90">
               Contact us.
             </h3>
-            <form action="">
-              <div className="flex gap-[18px]">
+            <p className="text-lg text-neutral opacity-60 mb-[24px] mt-[10px]">
+              Want to inform us briefly, fill this form and submit for a quick
+              feedback.
+            </p>
+            {/* Didn't want to use formik */}
+            <form
+              ref={formRef}
+              action=""
+              onSubmit={handleSubmit}
+              className="text-neutral"
+            >
+              <div className="flex max-sm:flex-col gap-[18px]">
                 <input
                   placeholder="Name"
                   name="name"
-                  className="bg-[var(--primary-gray)]  px-[10px] outline-gray-200 w-1/2 h-[45px] rounded-[6px]"
+                  className="bg-[var(--primary-gray)]  px-[10px] outline-gray-200 max-sm:w-full w-1/2 h-[45px] rounded-[6px]"
                   type="text"
                   required
+                  ref={nameRef}
                 />
                 <input
                   placeholder="Email"
                   name="email"
-                  className="bg-[var(--primary-gray)]  px-[10px] outline-gray-200 w-1/2 h-[45px] rounded-[6px]"
+                  className="bg-[var(--primary-gray)]  px-[10px] max-sm:w-full outline-gray-200 w-1/2 h-[45px] rounded-[6px]"
                   type="email"
                   required
+                  ref={emailRef}
                 />
               </div>
 
@@ -105,6 +133,7 @@ export default function Contact() {
                   className="bg-[var(--primary-gray)] w-full outline-gray-200 px-[10px] h-[45px] rounded-[6px]"
                   type="text"
                   required
+                  ref={subjectRef}
                 />
               </div>
 
@@ -112,14 +141,15 @@ export default function Contact() {
                 <textarea
                   placeholder="Message"
                   name="message"
-                  className="bg-[var(--primary-gray)] h-[300px] outline-gray-200 w-full px-[10px] py-[10px]  rounded-[6px]"
+                  className="bg-[var(--primary-gray)] h-[300px] text-neutral outline-gray-200 w-full px-[10px] py-[10px]  rounded-[6px]"
                   required
+                  ref={messageRef}
                 />
               </div>
 
               <button
                 type="submit"
-                className="bg-[var(--primary-red)] uppercase flex gap-[8px] text-lg justify-center items-center font-semibold text-center w-full h-[45px] rounded-[6px]"
+                className="bg-[var(--primary-red)] uppercase text-white flex gap-[8px] text-lg justify-center items-center font-semibold text-center w-full h-[45px] rounded-[6px]"
               >
                 Send
                 <IoSendOutline size={20} />

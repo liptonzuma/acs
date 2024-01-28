@@ -38,11 +38,12 @@ export default function HeroSection() {
             </p>
 
             <div className="flex items-center flex-wrap  gap-[15px]">
-              <Button
-                label="Get in touch"
-                onClick={() => {}}
-                className="font-bold max-sm:w-full capitalize h-[50px] px-[3rem] text-lg bg-white rounded-[6px] text-neutral-950"
-              />
+              <Link
+                href="#contact-us"
+                className="font-bold max-sm:w-full flex items-center capitalize h-[50px] px-[3rem] text-lg bg-white rounded-[6px] text-neutral-950"
+              >
+                Get in touch
+              </Link>
 
               <Link
                 href=""
