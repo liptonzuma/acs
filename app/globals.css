@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: center;
   overflow-x: hidden !important;
+  color: black !important;
 }
 /* .content {
   max-width: 1500px;
