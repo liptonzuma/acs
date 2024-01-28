@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
 import React from 'react';
-import Button from '../../components/shared/Button';
 import Link from 'next/link';
 import Image from 'next/image';
 import pattern from './images/patterns.png';
@@ -10,7 +9,7 @@ import Clients from './Clients';
 import RedText from '../../components/shared/RedText';
 
 export const title = 'Adaptive computer solutions';
-const whiteSpaceRegex = /^\s+$/;
+// const whiteSpaceRegex = /^\s+$/;
 
 export default function HeroSection() {
   return (
