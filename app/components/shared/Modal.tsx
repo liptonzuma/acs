@@ -22,7 +22,7 @@ export default function Modal({ children, open, setOpen }: ModalInterface) {
   return (
     <div>
       <dialog ref={modalRef} id="my_modal_5" className="modal modal-middle ">
-        <div className="bg-white max-md:w-[80%] max-sm:modal-box max-sm:w-[90%] w-[750px] p-[24px] rounded-[8px] border-[1.5px]">
+        <div className="bg-[white!important] max-md:w-[80%] max-sm:modal-box max-sm:w-[90%] w-[750px] p-[24px] rounded-[8px] border-[1.5px]">
           {children}
           <div className="modal-action">
             <form method="dialog">

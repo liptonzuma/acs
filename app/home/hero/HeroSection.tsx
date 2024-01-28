@@ -18,7 +18,7 @@ export default function HeroSection() {
     min-h-[100dvh]  bg-neutral-950  max-md:w-[100%] w-[100dvw] text-white p-[40px] max-sm:px-[50px] flex  flex-col items-center justify-center
   `}
     >
-      <DivWrapper className="lg:mt-[40px]">
+      <DivWrapper className="lg:mt-[50px]">
         <div className="md:w-1/2 md:hidden max-h-[200px] overflow-y-hidden mb-[30px]">
           <Image draggable={false} src={pattern} alt="pattern" />
         </div>
