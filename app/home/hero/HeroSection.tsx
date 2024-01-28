@@ -37,7 +37,7 @@ export default function HeroSection() {
 
             <div className="flex items-center flex-wrap  gap-[15px]">
               <Link
-                href="#contact-us"
+                href="/#contact_us"
                 className="font-bold max-sm:w-full flex items-center justify-center capitalize h-[50px] px-[3rem] text-base bg-white rounded-[6px] text-neutral-950"
               >
                 Get in touch
