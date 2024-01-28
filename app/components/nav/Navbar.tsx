@@ -55,7 +55,7 @@ export default function Navbar() {
   return (
     <nav
       className={`
-   max-md:w-[100%] w-[100vw!important] left-0 fixed top-0 z-[9999] items-center text-white bg-neutral-950 max-h-[100px] py-[30px] max-sm:px-[50px] flex justify-center
+   max-md:w-[100%] w-[100vw!important] left-0 fixed top-0 z-[9999] items-center text-white bg-neutral-950 max-h-[80px] py-[30px] max-sm:px-[50px] flex justify-center
 `}
     >
       <DivWrapper className="self-center  flex justify-between md:px-[30px]   max-md:hidden items-center ">
