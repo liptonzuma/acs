@@ -1,9 +1,9 @@
 import { Metadata } from 'next';
-import HeroSection from './components/home/hero/HeroSection';
-import ProductAndServices from './components/home/services/ProductAndServices';
-import CoreValues from './components/home/values/CoreValues';
-import Testimonies from './components/home/testimonies/Testimonies';
-import Contact from './components/home/contact/Contact';
+import HeroSection from './home/hero/HeroSection';
+import ProductAndServices from './home/services/ProductAndServices';
+import CoreValues from './home/values/CoreValues';
+import Testimonies from './home/testimonies/Testimonies';
+import Contact from './home/contact/Contact';
 
 export const metadata: Metadata = {
   title: 'Adaptive Computer Solutions',

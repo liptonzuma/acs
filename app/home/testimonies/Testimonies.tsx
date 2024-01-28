@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import DivWrapper from '../../shared/DivWrapper';
-import RedText from '../../shared/RedText';
+import DivWrapper from '../../components/shared/DivWrapper';
+import RedText from '../../components/shared/RedText';
 import { BiSolidQuoteLeft } from 'react-icons/bi';
 import Image from 'next/image';
 
@@ -35,8 +35,8 @@ const mockTestimonies = [
 export default function Testimonies() {
   return (
     <section
-      id="services"
-      className="flex  flex-col bg-[var(--primary-gray)]  items-center p-[40px] pb-[4rem]"
+      id="testimonies"
+      className="flex scroll-mt-[60px]  flex-col bg-[var(--primary-gray)]  items-center p-[40px] pb-[4rem]"
     >
       <DivWrapper className=" p-[4rem] rounded-[6px] ">
         <h3 className="font-semibold text-2xl opacity-45">

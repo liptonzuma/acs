@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import DivWrapper from '../../shared/DivWrapper';
-import RedText from '../../shared/RedText';
+import DivWrapper from '../../components/shared/DivWrapper';
+import RedText from '../../components/shared/RedText';
 import { GoSponsorTiers, GoGoal, GoTelescope } from 'react-icons/go';
-import Card from '../../shared/Card';
-import BarCard from '../../shared/BarCard';
+import Card from '../../components/shared/Card';
+import BarCard from '../../components/shared/BarCard';
 
 const traits = [
   {
@@ -30,7 +30,7 @@ const traits = [
 export default function CoreValues() {
   return (
     <section
-      id="values"
+      id="about_us"
       className="flex  flex-col bg-[var(--primary-gray)]  items-center p-[50px] py-[8rem]"
     >
       <DivWrapper className="">

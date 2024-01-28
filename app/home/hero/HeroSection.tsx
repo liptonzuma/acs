@@ -1,12 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
 import React from 'react';
-import Button from '../../shared/Button';
+import Button from '../../components/shared/Button';
 import Link from 'next/link';
 import Image from 'next/image';
 import pattern from './images/patterns.png';
-import DivWrapper from '../../shared/DivWrapper';
+import DivWrapper from '../../components/shared/DivWrapper';
 import Clients from './Clients';
+import RedText from '../../components/shared/RedText';
 
 export const title = 'Adaptive computer solutions';
 const whiteSpaceRegex = /^\s+$/;
@@ -15,21 +16,19 @@ export default function HeroSection() {
   return (
     <div
       className={`
-    min-h-[100dvh] bg-neutral-950  max-md:w-[100%] w-[100dvw] text-white p-[40px] max-sm:px-[50px] flex  flex-col items-center justify-center
+    min-h-[100dvh]  bg-neutral-950  max-md:w-[100%] w-[100dvw] text-white p-[40px] max-sm:px-[50px] flex  flex-col items-center justify-center
   `}
     >
       <DivWrapper>
         <div className="md:w-1/2 md:hidden max-h-[200px] overflow-y-hidden mb-[30px]">
           <Image draggable={false} src={pattern} alt="pattern" />
         </div>
-        <h1 className="font-medium md:text-[3.5rem] text-[2.5rem] capitalize md:leading-[4rem] leading-[3rem] md:w-[88%]">
-          No solution is{' '}
-          <span className="text-[var(--primary-red)]">too complex</span> when
-          you have the <span className="text-[var(--primary-red)]">right</span>{' '}
-          tools and personel.
-        </h1>
-        <div className="flex md:flex-row flex-col">
+
+        <div className="flex md:flex-row flex-col gap-[30px]">
           <div className="md:w-1/2">
+            <h1 className="font-medium md:text-[3.5rem] text-[2rem] capitalize md:leading-[4rem] leading-[3rem] ">
+              <RedText>Best</RedText> software engineer outsourcing space.
+            </h1>
             <p className="md:w-[90%]  text-[1.2rem] md:my-[3rem] my-[2rem] text-gray-300">
               Unlock the potential of your projects with our elite team of
               software engineering, agile scrum masters, and quality assurance
@@ -40,7 +39,7 @@ export default function HeroSection() {
             <div className="flex items-center flex-wrap  gap-[15px]">
               <Link
                 href="#contact-us"
-                className="font-bold max-sm:w-full flex items-center capitalize h-[50px] px-[3rem] text-lg bg-white rounded-[6px] text-neutral-950"
+                className="font-bold max-sm:w-full flex items-center justify-center capitalize h-[50px] px-[3rem] text-lg bg-white rounded-[6px] text-neutral-950"
               >
                 Get in touch
               </Link>

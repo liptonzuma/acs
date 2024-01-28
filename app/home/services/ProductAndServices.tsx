@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import DivWrapper from '../../shared/DivWrapper';
-import RedText from '../../shared/RedText';
-import BarCard from '../../shared/BarCard';
-import Button from '../../shared/Button';
-import Modal from '../../shared/Modal';
+import DivWrapper from '../../components/shared/DivWrapper';
+import RedText from '../../components/shared/RedText';
+import BarCard from '../../components/shared/BarCard';
+import Button from '../../components/shared/Button';
+import Modal from '../../components/shared/Modal';
 import { RiCodeSSlashFill, RiUserVoiceLine } from 'react-icons/ri';
 import { BsPeople } from 'react-icons/bs';
 import { MdOutlineSettingsInputAntenna } from 'react-icons/md';
@@ -31,8 +31,8 @@ export default function ProuctAndServices() {
   }
   return (
     <section
-      id="services"
-      className="flex  flex-col bg-[var(--primary-gray)]  items-center p-[50px] pb-[4rem]"
+      id="products&services"
+      className="flex scroll-mt-[80px] flex-col bg-[var(--primary-gray)]  items-center p-[50px] pb-[4rem]"
     >
       <DivWrapper className=" bg-white p-[4rem] rounded-[6px] ">
         <Modal open={modalOpened} setOpen={setModalOpened}>

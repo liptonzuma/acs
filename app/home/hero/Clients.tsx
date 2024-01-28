@@ -11,7 +11,7 @@ export default function Clients() {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 8,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -38,7 +38,7 @@ export default function Clients() {
         breakpoint: 760,
 
         settings: {
-          slidesToShow: 3.2,
+          slidesToShow: 3.5,
         },
       },
     ],
@@ -57,9 +57,9 @@ export default function Clients() {
   ];
 
   return (
-    <div className="mt-[24px] ">
-      <p className="font-semibold text-xl uppercase">
-        Brands we've worked with:
+    <div className="mt-[42px] ">
+      <p className="font-semibold text-lg opacity-65 md:pl-[24px]">
+        Trusted by
       </p>
       <Slider
         {...settings}
@@ -67,16 +67,16 @@ export default function Clients() {
       >
         {clientsImages.map((img, i) => (
           <div
-            className={`mx-[20px!important] min-w-[100px] outline-none`}
+            className={`mx-[20px!important] min-w-[80px] outline-none`}
             key={img}
           >
             <Image
               draggable={false}
-              width={200}
-              height={200}
+              width={100}
+              height={100}
               alt={img}
               src={require(`./images/${img}.png`)}
-              className="rounded-box max-sm:w-auto w-[170px] "
+              className="rounded-box max-sm:w-auto w-[100px] "
             />
           </div>
         ))}

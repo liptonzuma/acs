@@ -7,26 +7,32 @@ import Link from 'next/link';
 import { GrLocation } from 'react-icons/gr';
 import { IoCallOutline } from 'react-icons/io5';
 import { LuMail } from 'react-icons/lu';
+import {
+  SlSocialFacebook,
+  SlSocialTwitter,
+  SlSocialYoutube,
+} from 'react-icons/sl';
+import { FaWhatsapp } from 'react-icons/fa';
 
-const links = [
+export const links = [
   {
     title: 'Company',
     links: [
       {
         path: 'home',
-        pathName: '#home',
+        pathName: '/#home',
       },
       {
         path: 'about us',
-        pathName: '#about-us',
+        pathName: '/about_us',
       },
       {
         path: 'services',
-        pathName: '#products&services',
+        pathName: '/#products&services',
       },
       {
         path: 'testimonies',
-        pathName: '#testimonies',
+        pathName: '/#testimonies',
       },
       {
         path: 'careers',
@@ -93,7 +99,39 @@ export default function Footer() {
               talents. We code dreams and we say it's possible.
             </p>
 
-            <div className="flex mt-[12px]"></div>
+            <div className="flex mt-[12px] opacity-70 text-[var(--primary-red)] pl-[20px] gap-[14px]">
+              <Link
+                href="https://twitter.com/ACS_io"
+                target="_blank"
+                className="block"
+              >
+                <SlSocialTwitter size={28} />
+              </Link>
+
+              <Link
+                href="https://web.facebook.com/adaptiveComputer"
+                target="_blank"
+                className="block"
+              >
+                <SlSocialFacebook size={28} />
+              </Link>
+
+              <Link
+                href="https://www.youtube.com/channel/UC5Tu3Zd9_qq_nXn4jbjwSPw"
+                target="_blank"
+                className="block"
+              >
+                <SlSocialYoutube size={28} />
+              </Link>
+
+              <Link
+                href="https://api.whatsapp.com/send?phone=233303937079"
+                target="_blank"
+                className="block"
+              >
+                <FaWhatsapp size={28} />
+              </Link>
+            </div>
           </section>
           {links.map((l, index) => (
             <section key={l.title} className="mt-[54px]">

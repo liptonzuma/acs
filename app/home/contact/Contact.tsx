@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client';
 import React, { ElementRef, useRef } from 'react';
-import DivWrapper from '../../shared/DivWrapper';
+import DivWrapper from '../../components/shared/DivWrapper';
 import { GrLocation } from 'react-icons/gr';
 import { LuMail } from 'react-icons/lu';
 import { IoCallOutline, IoSendOutline } from 'react-icons/io5';
@@ -28,8 +28,8 @@ export default function Contact() {
   }
   return (
     <section
-      id="contact-us"
-      className="flex  flex-col bg-[var(--primary-gray)]  items-center p-[50px] pb-[4rem]"
+      id="contact_us"
+      className="flex scroll-mt-[60px]  flex-col bg-[var(--primary-gray)]  items-center p-[50px] pb-[4rem]"
     >
       <DivWrapper className="bg-neutral-900 text-white p-[4rem] rounded-[6px] ">
         <div className="flex max-md:flex-col gap-[30px]">
