@@ -58,7 +58,7 @@ export default function Navbar() {
    max-md:w-[100%] w-[100vw!important] left-0 fixed top-0 z-[9999] items-center text-white bg-neutral-950 max-h-[100px] py-[30px] max-sm:px-[50px] flex justify-center
 `}
     >
-      <DivWrapper className="self-center  flex justify-between   max-md:hidden items-center ">
+      <DivWrapper className="self-center  flex justify-between px-[20px]   max-md:hidden items-center ">
         <div className="company-links flex gap-[30px] ">
           {companyLinks.map((link, index) => (
             <Link
