@@ -119,7 +119,7 @@ export default function ProuctAndServices() {
                     className="font-bold  text-[var(--primary-red)]"
                   />
 
-                  <h3 className="font-semibold text-[1.3rem] opacity-75">
+                  <h3 className="font-semibold text-[1.1rem] opacity-75">
                     Voice Applications.
                   </h3>
                 </div>
