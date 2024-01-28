@@ -4,7 +4,7 @@ import DivWrapper from '../shared/DivWrapper';
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from './images/navLogo.png';
-import { RiMenu4Line, RiMenuFill } from 'react-icons/ri';
+import { RiMenuFill } from 'react-icons/ri';
 
 export default function Navbar() {
   const companyLinks = [
@@ -77,7 +77,7 @@ export default function Navbar() {
             alt="logo"
             width={200}
             height={200}
-            className="w-[90px] h-auto"
+            className="w-[80px] h-auto"
           />
         </Link>
 
